@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
+:root {
+	font-size: 16px;
+	--logo-fz: 90px;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.main-header {
+	height: 100vh;
+	background: url("../img/main.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+.main-header__title {
+	color: #111;
+	text-align: center;
+	font-weight: 300;
+	font-size: var(--logo-fz);
+	width: 62%;
+}
+.btn {
+	text-decoration: none;
+	color: #111;
+	border: 1px solid #111;
+	padding: 15px 30px;
+	font-size: 1.4em;
+	outline: 0;
+	background: 0;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+.btn:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+/* EDYTOR */
+
+/* !DODAĆ ANIMACJE TEXTAREA */
+
+.content {
+	background: url("../img/main2.png");
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100vh;
+	gap: 50px;
+	/* 
+	display: flex;
+	justify-content: space-around; */
+
+	padding: 50px 40px;
+}
+.content__section {
+	display: flex;
+	flex-basis: 40%;
+	flex-direction: column;
+}
+.content__header {
+	font-size: 26px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+.editor {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-grow: 1;
+}
+.editor__controls {
+	list-style-type: none;
+	line-height: 150%;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+}
+.textarea {
+	flex-basis: 100%;
+	resize: none;
+	border: 1px solid #111;
+	outline: 0;
+	padding: 15px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+}
+.editor__item {
+	display: flex;
+	gap: 20px;
+	background: linear-gradient(#0bda51, #0bda51) no-repeat;
+	background-size: 0% 1px;
+	padding-bottom: 4px;
+	background-position: 0 100%;
+	transition: 0.4s;
+}
+.editor__item:hover {
+	background-size: 100% 1px;
+	cursor: pointer;
+}
+.editor__submit {
+	margin-top: auto;
+}
+.editor__submit:hover {
+	background-color: #09aa3e;
+	color: snow;
+}

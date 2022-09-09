@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+		/>
+	</head>
+	<body>
+		<header class="main-header">
+			<h1 class="main-header__title">Generator tekstu</h1>
+			<a href="#jump1" class="main-header__btn btn">
+				<i class="bi bi-gear-fill"></i>
+				Zacznij
+			</a>
+		</header>
+		<main id="jump1" class="content">
+			<section class="content__section">
+				<h2 class="content__header">Tekst do sformatowania</h2>
+
+				<div class="editor">
+					<ul class="editor__controls">
+						<li class="editor__item editor__item--bold">
+							<i class="bi bi-circle editor__item--bold-icon"></i
+							>Pogrubiony
+						</li>
+						<li class="editor__item editor__item--italics">
+							<i
+								class="bi bi-circle editor__item--italics-icon"
+							></i
+							>Kursywa
+						</li>
+						<li class="editor__item editor__item--sup">
+							<i class="bi bi-circle editor__item--sup-icon"></i
+							>Losowy kolor
+						</li>
+						<li class="editor__item editor__item--sub">
+							<i class="bi bi-circle editor__item--sub-icon"></i
+							>Mniejszy
+						</li>
+						<li class="editor__item editor__item--line">
+							<i class="bi bi-circle editor__item--line-icon"></i
+							>Przecięcie
+						</li>
+						<button class="editor__submit btn">Zastosuj</button>
+					</ul>
+
+					<textarea class="editor__textarea textarea"></textarea>
+				</div>
+			</section>
+			<section class="content__section">
+				<h2 class="content__header">Gotowy tekst</h2>
+				<textarea
+					readonly
+					class="content__textarea textarea"
+				></textarea>
+			</section>
+		</main>
+		<script src="js/app.js"></script>
+	</body>
+</html>
