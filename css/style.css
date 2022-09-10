@@ -29,6 +29,7 @@ body {
 	text-align: center;
 	font-weight: 300;
 	font-size: var(--logo-fz);
+	position: relative;
 	width: 62%;
 }
 .btn {
@@ -116,4 +117,40 @@ body {
 .editor__submit:hover {
 	background-color: #09aa3e;
 	color: snow;
+}
+.main-nav {
+	border-bottom: 1px solid black;
+	padding: 10px 40px;
+	height: 100px;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+}
+.main-nav__title {
+	font-weight: 300;
+}
+.main-nav__list {
+	list-style-type: none;
+	display: flex;
+	gap: 30px;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+.main-nav__title {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+.main-nav__title-icon {
+	font-size: 2.2rem;
+}
+.main-header__title-dash {
+	width: 50px;
+	height: 120px;
+	position: absolute;
+	transform: translateY(-10px);
 }
